@@ -6,3 +6,151 @@
     --black: #00243a;
     --white: #fff;
 }
+
+body{
+    margin: 0;                 /*Esto lo agregamos para quitar un scroll en pantalla*/
+    background-color: salmon;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    justify-content: center;  /*para poder centrar cualquier elemento con estas dos lineas*/
+    align-items: center;       /*es indispensable que contemos con un width y un height*/
+}                              /*Por defecto en este contenedor el width es del 100%*/
+                               /*por lo que solo agregamos el height: 100vh; */ 
+
+
+.head{
+    width: 100px;
+    height: 200px;
+    background: var(--skin);
+    border-radius: 50px;
+    position: relative;        /*Con esto indicamos que los demas elementos se 
+                                        adheriran al elemento head*/
+}
+
+.ceja{
+    width: 100%;
+    height: 10px;
+    background: var(--skin);
+    position: absolute;
+    top: 54px;
+}
+
+.eye__left{
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    border-radius: 50%;
+}
+
+.eye__right{
+    width: 20px;
+    height: 20px;
+    background: var(--white);
+    position: absolute;
+    top: 60px;
+    left: 50px;
+    border-radius: 50%;
+}
+
+.barba{
+    width: 100px;
+    height: 100px;
+    background: var(--black);
+    position: absolute;
+    top: 90px;
+    border-radius: 30px;
+}
+
+.nose{
+    width: 25px;
+    height: 25px;
+    background-color: var(--skin);
+    position: absolute;
+    border-radius: 50%;
+    top: 80px;
+    left: 40px;
+}
+
+.cuello{
+    width: 55px;
+    height: 35px;
+    background: var(--skin);
+    position: absolute;
+    left: 23px;
+    top: 180px;
+    opacity: 0.7;
+}
+
+.sonrisa{
+    width: 45px;
+    height: 28px;
+    background: var(--red);
+    position: absolute;
+    border-radius: 20px;
+    left: 28px;
+    top: 110px;
+}
+
+.dientes{
+    width: 30px;
+    height: 8px;
+    background: var(--white);
+    position: absolute;
+    left: 28px;
+    top: 117px;
+}
+
+.negro{
+    width: 50px;
+    height: 8px;
+    background: var(--black);
+    position: absolute;
+    left: 30px;
+    top: 109px;
+}
+
+.ear__left{
+    width: 15px;
+    height: 15px;
+    background: var(--skin);
+    position: absolute;
+    border-radius: 20px;
+    left: -10px;
+    top: 80px;
+}
+
+.ear__right{
+    width: 15px;
+    height: 15px;
+    background: var(--skin);
+    position: absolute;
+    border-radius: 20px;
+    left: 94px;
+    top: 80px;
+}
+
+.point__eye__left{
+    width: 5px;
+    height: 5px;
+    background: var(--black);
+    position: absolute;
+    border-radius: 20px;
+    left: 40px;
+    top: 68px;
+}
+
+.point__eye__right{
+    width: 5px;
+    height: 5px;
+    background: var(--black);
+    position: absolute;
+    border-radius: 20px;
+    left: 60px;
+    top: 68px;
+}
